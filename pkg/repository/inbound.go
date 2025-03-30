@@ -1,7 +1,10 @@
 package repository
 
-import "context"
+import (
+	"context"
+	"isa-stats/pkg/model"
+)
 
 type Inbound interface {
-	Save(ctx context.Context, in *Inbound) error
+	Save(ctx context.Context, in *model.Inbound) error
 }
